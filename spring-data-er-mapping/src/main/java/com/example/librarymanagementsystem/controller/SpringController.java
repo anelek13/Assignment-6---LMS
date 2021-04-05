@@ -17,16 +17,16 @@ public class SpringController {
         System.out.println("userRepository.findAll() = " + userRepository.findAll());
 
         User user = new User();
-        user.setName("Yershat Abibulla");
+        user.setName("Zhumabek Anel");
         user.setAge(30);
 
         Student student = new Student();
-        student.setName("Abibulla Yershat");
-        student.setUsername("MartyJ");
+        student.setName("Zhumabek Anel");
+        student.setUsername("Zhaaneel");
 
         Student student2 = new Student();
-        student2.setName("Sarsenbek Dulat");
-        student2.setUsername("Dula");
+        student2.setName("Isaeva Nargiz");
+        student2.setUsername("Narik");
 
         Address address = new Address();
         address.setHouseNo(90);
@@ -65,8 +65,8 @@ public class SpringController {
         course.setStudentList(studentList);
 
         StudentService service = new StudentService();
-        service.addNewStudent("Abibulla Yershat", "Yershat", bookList, courseList);
-        service.findStudentByName(studentList, "Abibullla Yershat");
+        service.addNewStudent("Zhumabek Anel", "Anel", bookList, courseList);
+        service.findStudentByName(studentList, "Zhumabek Anel");
         service.showStudentsBooks(student);
     }
 }
